@@ -85,9 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				00E80C4020649F6B00BEB84B /* ZRUploadProgressView.h */,
-				00E80C4120649F6B00BEB84B /* ZRCircleProgressView.m */,
 				00E80C4220649F6B00BEB84B /* ZRUploadProgressView.m */,
 				00E80C4320649F6B00BEB84B /* ZRCircleProgressView.h */,
+				00E80C4120649F6B00BEB84B /* ZRCircleProgressView.m */,
 			);
 			path = ZRProgressView;
 			sourceTree = "<group>";

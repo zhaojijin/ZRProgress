@@ -12,7 +12,6 @@ typedef void(^ZRCompletionBlock)(void);
 
 @interface ZRUploadProgressView : UIView
 
-// 默认为无色
 @property (nonatomic, strong) UIColor *progressColor;
 // 0~1 小数
 @property (nonatomic, assign) CGFloat progress;
