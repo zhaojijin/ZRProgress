@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  ZRProgressDemo
+//  ZRProgress
 //
-//  Created by Robin on 2018/3/22.
+//  Created by Robin on 2018/3/23.
 //  Copyright © 2018年 Robin. All rights reserved.
 //
 
@@ -54,7 +54,7 @@
         NSLog(@"circleView1 - completion");
     };
     [self.view addSubview:self.circleView1];
-
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
