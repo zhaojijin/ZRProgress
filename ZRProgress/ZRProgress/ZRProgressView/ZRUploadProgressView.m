@@ -80,6 +80,7 @@
 
 - (void)setProgress:(CGFloat)progress {
     _progress = MIN(1, MAX(0, progress));
+    _progress = 1.0 - progress;
     self.trackLayer.strokeEnd = _progress;
     NSString *progressStr = [NSString stringWithFormat:@"%.1f%%",100.0-_progress * 100];
     self.titleLabel.text = progressStr;

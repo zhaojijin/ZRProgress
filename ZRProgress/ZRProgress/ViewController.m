@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.progress = 1.0;
+    self.progress = 0.0;
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat width = (screenWidth-80)/3;
@@ -68,14 +68,14 @@
 - (void)startTimer {
     
     CGFloat progressRandom =  (arc4random()%100)/10000.0;
-    self.progress -= progressRandom;
-    if (self.progress < 0) {
+    self.progress += progressRandom;
+    if (self.progress >= 1) {
         [self.timer invalidate];
         self.timer = nil;
     }
     self.uploadView.progress = self.progress;
-    self.circleView.progress = 1-self.progress;
-    self.circleView1.progress = 1-self.progress;
+    self.circleView.progress = self.progress;
+    self.circleView1.progress = self.progress;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -87,6 +87,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
